@@ -1,0 +1,51 @@
+# This file will be read by resetprop
+# Example: Change dpi
+# ro.sf.lcd_density=320
+
+ro.product.cpu.abi=arm64-v8a
+ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=arm64-v8a
+
+ro.minui.default_rotation=ROTATION_RIGHT
+persist.vendor.sys.disable.moms=1
+persist.logd.size=38M
+
+ro.product.property_source_order=odm,vendor,product,system
+
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+
+ro.kernel.zio=38,108,105,16
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# disable ipo for development
+sys.ipo.disable=1
+
+# identity
+Build.BRAND=MTK
+
+# Disable iorapd
+ro.iorapd.enable=false
+
+lockscreen.rot_override=true
+log.tag.launcher_force_rotate=VERBOSE
+ro.minui.default_rotation
+ro.sf.hwrotation=90
+
+#
+# ADDITIONAL_BUILD_PROPERTIES
+#
+ro.treble.enabled=true
+net.bt.name=XP
